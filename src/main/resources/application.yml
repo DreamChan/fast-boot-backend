@@ -1,0 +1,56 @@
+# spring 组件相关设置
+spring:
+  application:
+    name: fast-boot-backend
+  profiles:
+      active: dev
+#    active: prod
+  jackson:
+    default-property-inclusion: non_null
+    date-format: 'yyyy-MM-dd HH:mm:ss'
+    time-zone: GMT+8
+  aop:
+    # 让Spring强制使用CGLib生成代理类。
+    proxy-target-class: true
+  cache:
+    # 设置缓存类型，这里使用Redis作为缓存服务器
+    type: redis
+    # 定义cache名称，用于在缓存注解中引用，多个名称可以使用逗号分隔
+    cache-names: redisCache
+    redis:
+      # 允许保存空值
+      cache-null-values: true
+      # 是否使用前缀
+      use-key-prefix: true
+      # 设置缓存失效时间，0或者默认为永远不失效
+      time-to-live: 12H
+
+#mybatis plus 设置
+mybatis-plus:
+  mapper-locations: classpath:cn/dreamchan/modules/**/xml/*Mapper.xml
+  global-config:
+    # 关闭MP3.0自带的banner
+    banner: false
+    db-config:
+      #主键类型  0:"数据库ID自增",1:"该类型为未设置主键类型", 2:"用户输入ID",3:"全局唯一ID (数字类型唯一ID)", 4:"全局唯一ID UUID",5:"字符串全局唯一ID (idWorker 的字符串表示)";
+      id-type: ASSIGN_ID
+      # 默认数据库表下划线命名
+      table-underline: true
+      select-strategy: not_empty
+      insert-strategy: not_null
+      update-strategy: not_null
+  configuration:
+    # 是否开启自动驼峰命名规则映射:从数据库列名到Java属性驼峰命名的类似映射
+    map-underscore-to-camel-case: true
+    # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+# token配置
+token:
+  # 令牌自定义标识
+  tokenHead: Authorization
+  # 令牌密钥
+  secret: fastboot
+  # 令牌有效期（默认60分钟）
+  expireTime: 60

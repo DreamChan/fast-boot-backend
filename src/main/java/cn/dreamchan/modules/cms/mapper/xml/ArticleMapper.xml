@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dreamchan.modules.cms.mapper.ArticleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.dreamchan.modules.cms.pojo.entity.ArticleEntity">
+        <id column="article_id" property="articleId" />
+        <result column="title" property="title" />
+        <result column="user_id" property="userId" />
+        <result column="category_id" property="categoryId" />
+        <result column="content" property="content" />
+        <result column="view_count" property="viewCount" />
+        <result column="state" property="state" />
+        <result column="create_by" property="createBy" />
+        <result column="create_time" property="createTime" />
+        <result column="update_by" property="updateBy" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+            article_id, title, user_id, category_id, content, view_count, state, create_by, create_time, update_by, update_time
+    </sql>
+
+</mapper>
