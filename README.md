@@ -10,7 +10,7 @@
 密码：admin123
 
 druid数据库监控
-账户: admin
+账号: admin
 密码: admin
 
 ## 技术选型
