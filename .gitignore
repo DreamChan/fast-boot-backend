@@ -114,4 +114,6 @@ aout/
  *.sublime-workspace
  .vscode
 
+/logs/
 /src/main/resources/rebel.xml
+
