@@ -48,6 +48,8 @@ druid数据库监控
 # 克隆项目
 git clone https://github.com/DreamChan/fast-boot-backend.git
 
+# 创建数据库本地数据库fast-boot,  运行sql/fast-boot.sql文件
+
 # 修改配置
 将 application-dev.yml 文件中的 mysql、redis、minio连接地址和账号等修改为自己的本地开发环境连接地址和账号
 
@@ -56,8 +58,6 @@ FastBootApplication
 ```
 
 ## 演示图
-
-![](https://p.pstatp.com/origin/fec40002e520ca73531b)
 
 ![](https://p.pstatp.com/origin/13817000014479c2ff9be)
 
