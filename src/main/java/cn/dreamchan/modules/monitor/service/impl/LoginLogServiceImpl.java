@@ -2,9 +2,9 @@ package cn.dreamchan.modules.monitor.service.impl;
 
 import cn.dreamchan.modules.monitor.mapper.LoginLogMapper;
 import cn.dreamchan.modules.monitor.service.LoginLogService;
-import cn.dreamchan.common.base.BaseService;
 import cn.dreamchan.modules.monitor.pojo.entity.LoginLogEntity;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
  * @author DreamChan
  */
 @Service
-public class LoginLogServiceImpl extends BaseService<LoginLogMapper, LoginLogEntity> implements LoginLogService {
+public class LoginLogServiceImpl extends ServiceImpl<LoginLogMapper, LoginLogEntity> implements LoginLogService {
 
 }
 

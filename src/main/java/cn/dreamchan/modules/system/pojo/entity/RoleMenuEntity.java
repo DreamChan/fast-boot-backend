@@ -3,9 +3,10 @@ package cn.dreamchan.modules.system.pojo.entity;
 import com.baomidou.mybatisplus.annotation.TableName;
 
 
-import cn.dreamchan.common.base.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+
+import java.io.Serializable;
 
 
 /**
@@ -16,7 +17,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @TableName("sys_role_menu")
-public class RoleMenuEntity extends BaseEntity{
+public class RoleMenuEntity implements Serializable {
 
 	// 角色ID
 	private Long roleId;

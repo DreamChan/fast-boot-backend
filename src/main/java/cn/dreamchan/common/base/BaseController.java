@@ -6,12 +6,14 @@ import cn.dreamchan.common.utils.StringUtils;
 import cn.dreamchan.component.security.pojo.LoginUserDetails;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 
+import java.io.Serializable;
+
 /**
  * Controller 基类
  *
  * @author DreamChan
  */
-public class BaseController<Q extends BasePageQueryParam, E extends BaseEntity> {
+public class BaseController<Q extends BasePageQueryParam, E extends Serializable> {
 
     /**
      * 获取当前 登录用户

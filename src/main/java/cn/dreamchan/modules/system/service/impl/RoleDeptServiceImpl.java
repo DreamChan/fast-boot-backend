@@ -3,8 +3,8 @@ package cn.dreamchan.modules.system.service.impl;
 import cn.dreamchan.modules.system.mapper.RoleDeptMapper;
 import cn.dreamchan.modules.system.pojo.entity.RoleDeptEntity;
 import cn.dreamchan.modules.system.service.RoleDeptService;
-import cn.dreamchan.common.base.BaseService;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
  * @since 2020-07-15
  */
 @Service
-public class RoleDeptServiceImpl extends BaseService<RoleDeptMapper, RoleDeptEntity> implements RoleDeptService {
+public class RoleDeptServiceImpl extends ServiceImpl<RoleDeptMapper, RoleDeptEntity> implements RoleDeptService {
 
 }
 

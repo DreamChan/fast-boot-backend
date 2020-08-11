@@ -1,10 +1,10 @@
 package cn.dreamchan.modules.monitor.pojo.entity;
 
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 
-import cn.dreamchan.common.base.BaseEntity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -18,7 +18,7 @@ import lombok.Data;
  */
 @Data
 @TableName("mon_oper_log")
-public class OperLogEntity extends BaseEntity {
+public class OperLogEntity implements Serializable {
 
 
 	// 日志主键

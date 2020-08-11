@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
  * @author DreamChan
  */
 @Data
-    public class LoginUserDetails implements UserDetails {
+public class LoginUserDetails implements UserDetails {
 
     /**
      * 用户唯一标识

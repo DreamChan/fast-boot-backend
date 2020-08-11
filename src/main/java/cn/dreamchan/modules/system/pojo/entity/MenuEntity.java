@@ -60,19 +60,4 @@ public class MenuEntity extends BaseEntity {
 	// 排序
 	private Integer orderNum;
 
-	// 创建人
-	@TableField(fill = FieldFill.INSERT)
-	private String createBy;
-
-	// 创建时间
-	@TableField(fill = FieldFill.INSERT)
-	private LocalDateTime createTime;
-
-	// 更新人
-	@TableField(fill = FieldFill.INSERT_UPDATE)
-	private String updateBy;
-
-	// 更新时间
-	@TableField(fill = FieldFill.INSERT_UPDATE)
-	private LocalDateTime updateTime;
 }

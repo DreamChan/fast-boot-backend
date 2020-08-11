@@ -1,6 +1,7 @@
 package cn.dreamchan.modules.monitor.pojo.entity;
 
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 
@@ -19,7 +20,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @TableName("mon_login_log")
-public class LoginLogEntity extends BaseEntity {
+public class LoginLogEntity implements Serializable {
 
 
 	// 访问ID

@@ -7,8 +7,6 @@ import cn.dreamchan.common.base.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import java.time.LocalDateTime;
-
 
 /**
  * 字典数据
@@ -38,22 +36,6 @@ public class DictItemEntity extends BaseEntity {
 
 	// 备注
 	private String remark;
-
-	// 创建人
-	@TableField(fill = FieldFill.INSERT)
-	private String createBy;
-
-	// 创建时间
-	@TableField(fill = FieldFill.INSERT)
-	private LocalDateTime createTime;
-
-	// 更新人
-	@TableField(fill = FieldFill.INSERT_UPDATE)
-	private String updateBy;
-
-	// 更新时间
-	@TableField(fill = FieldFill.INSERT_UPDATE)
-	private LocalDateTime updateTime;
 
 
 }

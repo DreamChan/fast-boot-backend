@@ -1,12 +1,11 @@
 package cn.dreamchan.modules.system.pojo.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.extension.activerecord.Model;
 
-
-import cn.dreamchan.common.base.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+
+import java.io.Serializable;
 
 
 /**
@@ -17,7 +16,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @TableName("sys_user_post")
-public class UserPostEntity extends BaseEntity{
+public class UserPostEntity implements Serializable {
 
 
 	// 用户ID

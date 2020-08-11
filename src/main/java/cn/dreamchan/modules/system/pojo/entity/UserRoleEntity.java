@@ -3,10 +3,10 @@ package cn.dreamchan.modules.system.pojo.entity;
 import com.baomidou.mybatisplus.annotation.TableName;
 
 
-import cn.dreamchan.common.base.BaseEntity;
-import com.fasterxml.jackson.databind.ser.Serializers;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+
+import java.io.Serializable;
 
 
 /**
@@ -17,7 +17,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @TableName("sys_user_role")
-public class UserRoleEntity extends BaseEntity {
+public class UserRoleEntity implements Serializable {
 
 
 	// 用户ID

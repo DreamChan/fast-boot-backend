@@ -47,20 +47,4 @@ public class ArticleEntity extends BaseEntity {
 	// 状态（0表示已发布，1表示草稿，2表示删除）
 	private String state;
 
-	// 创建人
-	@TableField(fill = FieldFill.INSERT)
-	private String createBy;
-
-	// 创建时间
-	@TableField(fill = FieldFill.INSERT)
-	private LocalDateTime createTime;
-
-	// 更新人
-	@TableField(fill = FieldFill.INSERT_UPDATE)
-	private String updateBy;
-
-	// 更新时间
-	@TableField(fill = FieldFill.INSERT_UPDATE)
-	private LocalDateTime updateTime;
-
 }

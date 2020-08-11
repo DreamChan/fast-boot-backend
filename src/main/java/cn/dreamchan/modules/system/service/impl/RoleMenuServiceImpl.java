@@ -1,11 +1,10 @@
 package cn.dreamchan.modules.system.service.impl;
 
 import cn.dreamchan.modules.system.mapper.RoleMenuMapper;
-import cn.dreamchan.modules.system.pojo.entity.MenuEntity;
 import cn.dreamchan.modules.system.pojo.entity.RoleMenuEntity;
 import cn.dreamchan.modules.system.service.RoleMenuService;
-import cn.dreamchan.common.base.BaseService;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,7 +14,7 @@ import org.springframework.stereotype.Service;
  * @since 2020-07-15
  */
 @Service
-public class RoleMenuServiceImpl extends BaseService<RoleMenuMapper, RoleMenuEntity> implements RoleMenuService {
+public class RoleMenuServiceImpl extends ServiceImpl<RoleMenuMapper, RoleMenuEntity> implements RoleMenuService {
 
     @Override
     public boolean checkMenuExistRole(Long menuId) {

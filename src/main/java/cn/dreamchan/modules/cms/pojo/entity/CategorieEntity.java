@@ -41,20 +41,4 @@ public class CategorieEntity extends BaseEntity {
 	// 状态：0表示不使用，1表示正常
 	private String status;
 
-	// 创建人
-	@TableField(fill = FieldFill.INSERT)
-	private String createBy;
-
-	// 创建时间
-	@TableField(fill = FieldFill.INSERT)
-	private LocalDateTime createTime;
-
-	// 更新人
-	@TableField(fill = FieldFill.INSERT_UPDATE)
-	private String updateBy;
-
-	// 更新时间
-	@TableField(fill = FieldFill.INSERT_UPDATE)
-	private LocalDateTime updateTime;
-
 }
