@@ -138,7 +138,7 @@ INSERT INTO `sys_menu`(
         )
 VALUES (
         '${table.comment}修改',
-        '${cfg.moduleName}:${className}:update',
+        '${cfg.moduleName}:${className}:edit',
         3,
         '',
         @parentId,
