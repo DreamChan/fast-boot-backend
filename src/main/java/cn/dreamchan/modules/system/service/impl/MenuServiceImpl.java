@@ -39,6 +39,7 @@ public class MenuServiceImpl extends BaseService<MenuMapper, MenuEntity> impleme
      * @param
      * @return 菜单权限信息
      */
+    @Override
     public Set<String> getMenuListByUserId(Long userId) {
         Set<String> menus = new HashSet<>();
         // 管理员拥有所有权限

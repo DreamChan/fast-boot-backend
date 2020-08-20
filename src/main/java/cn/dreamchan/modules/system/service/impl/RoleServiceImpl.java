@@ -17,6 +17,7 @@ import cn.dreamchan.modules.system.service.mapstruct.RoleMapStruct;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import io.netty.util.Constant;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.annotation.Version;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -43,6 +44,7 @@ public class RoleServiceImpl extends BaseService<RoleMapper, RoleEntity> impleme
      * @param
      * @return 角色权限信息
      */
+    @Override
     public Set<String> getRoleListByUserId(Long userId) {
         Set<String> roles = new HashSet<>();
         // 管理员拥有所有权限
@@ -78,7 +80,7 @@ public class RoleServiceImpl extends BaseService<RoleMapper, RoleEntity> impleme
     }
 
     @Override
-    @Transactional
+    @Transactional()
     public Integer updateRole(RoleEditParam roleEditParam) {
         Long roleId = roleEditParam.getRoleId();
 
